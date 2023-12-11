@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1 class="title">Solicitudes</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="section_container" (click)="goToAusencias()">
+          <ion-icon name="alert-circle"></ion-icon>
+          <span>Ausencia</span>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="section_container">
+          <ion-icon name="reader"></ion-icon>
+          <span>Permisos</span>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="section_container">
+          <ion-icon name="game-controller"></ion-icon>
+          <span>Vacaciones</span>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="section_container">
+          <ion-icon name="nuclear"></ion-icon>
+          <span>Incidentes</span>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

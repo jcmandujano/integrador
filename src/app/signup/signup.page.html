@@ -3,25 +3,26 @@
     <section class="logo_container">
       <ion-img class="auth_logo" src="../../assets/icons/calendar-outline.png"></ion-img>
       <p class="header_title">Solicitud de Permisos</p>
-      <p class="header_title">Hola Bienvenido de nuevo</p>
+      <p class="header_title">Crea una cuenta</p>
     </section>
     
     <form>
+
       <ion-item lines="full" class="auth_input" fill="outline">
         <ion-label position="floating">Email</ion-label>
-        <ion-input type="text" #email required></ion-input>
+        <ion-input type="text" required  #email></ion-input>
       </ion-item>
   
       <ion-item lines="full" class="auth_input">
         <ion-label position="floating">Password</ion-label>
-        <ion-input type="password" #password required></ion-input>
+        <ion-input type="password" required #password></ion-input>
       </ion-item>
   
       <ion-row>
         <ion-col>
-          <ion-button type="submit" color="primary" expand="block" (click)="logIn(email, password)">Sign In</ion-button>
+          <ion-button type="submit" color="primary" expand="block" (click)="signUp(email, password)">Crear Cuenta</ion-button>
           <div class="signup_section">
-            <span> Don’t have an account yet?<a [routerLink]="['/signup']" class="small-text">Sign up</a></span>
+            <span> Do you have an account ?<a [routerLink]="['/']" class="small-text">Sign in</a></span>
           </div>
         </ion-col>
       </ion-row>
